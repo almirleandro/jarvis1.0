@@ -1,0 +1,69 @@
+/* basic.css*/
+html, body {
+    box-sizing: border-box;
+    background-color: #ffeead;
+    height: 97%;
+    padding: 0px;
+    margin: 10px;
+}
+
+.container > div {
+    display: flex;
+    color: #ffeead;
+}
+
+.header {
+    background-color: #96ceb4;	
+}
+
+.content {
+    background-color: #ff6f69;
+}
+
+.footer {
+    background-color: #ffcc5c;
+}
+
+
+
+
+
+/* fim do style.css*/
+.container {
+    display: grid;
+    height: 100%;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+}
+
+.header {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+.content {
+    grid-column: 1 / -1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horario {
+    font-size: 180px;
+}
+
+.mantra {
+    font-size: 60px;
+}
+
+.focus, .focusinput {
+    font-size: 35px;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    font-size: 2em;
+}
